@@ -1,0 +1,90 @@
+site_name: MkDocs for dummies
+
+# Site tree
+nav:
+  - Home: index.md 
+   
+repo_url: <>
+repo_name: mkdocs-for-dummies
+
+# Configuration
+
+#extra_css:
+#  - stylesheets/custom-colors.css
+
+theme:
+  name: material
+  custom_dir: custom-assets
+  favicon: SAP_R_grad_scrn.svg
+  icon:
+    logo: SAP_R_grad_scrn
+    repo: fontawesome/brands/github
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+
+  features:
+    - tabs
+    - instant
+    - navigation.instant
+    - navigation.tabs
+    - search.highlight
+ 
+  palette: 
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+  plugins:
+    - search    
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.tools.sap/ixp-tech-trainings 
+      name: iXp Tech Trainings 
+
+copyright: iXp Tech Trainings - 2022
+
+markdown_extensions:
+    - md_in_html
+    - toc:
+        permalink: true
+    - admonition
+    - codehilite
+    - def_list
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.tabbed
+    - pymdownx.highlight:
+        linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.keys
+    - pymdownx.superfences
+    - pymdownx.mark 
+    - pymdownx.smartsymbols
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - toc:
+        permalink: "#"
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+        options:
+          custom_icons:
+            - assets/.icons
